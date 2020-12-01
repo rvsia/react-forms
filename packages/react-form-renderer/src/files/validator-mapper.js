@@ -1,4 +1,4 @@
-import { required, length, pattern, numericality } from '../validators';
+import { required, length, pattern, numericality } from '../validators/validator-functions';
 
 import url from '../validators/url-validator';
 import validatorTypes from './validator-types';
