@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 
 import { Grid, Checkbox, FormControlLabel, FormLabel, FormGroup, FormControl, FormHelperText } from '@material-ui/core';
 
+<<<<<<< HEAD
 import MultipleChoiceListCommon, { wrapperProps } from '@data-driven-forms/common/multiple-choice-list';
+=======
+import MultipleChoiceListCommon, { wrapperProps } from '@data-driven-forms/common/src/multiple-choice-list';
+>>>>>>> ccf469ee (feat(mui): Migrate mapper to new build output structure.)
 import { validationError } from '../common/helpers';
 
 const CheckboxContext = createContext({});

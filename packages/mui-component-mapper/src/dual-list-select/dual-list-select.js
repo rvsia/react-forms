@@ -26,7 +26,11 @@ import SortIcon from '@material-ui/icons/ArrowUpward';
 
 import { makeStyles } from '@material-ui/core/styles';
 
+<<<<<<< HEAD
 import DualListSelectCommon from '@data-driven-forms/common/dual-list-select';
+=======
+import DualListSelectCommon from '@data-driven-forms/common/src/dual-list-select';
+>>>>>>> ccf469ee (feat(mui): Migrate mapper to new build output structure.)
 
 import FormFieldGrid from '../form-field-grid/form-field-grid';
 import { validationError } from '../common/helpers';

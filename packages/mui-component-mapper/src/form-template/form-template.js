@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import { Grid, Button as MUIButton, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
+<<<<<<< HEAD
 import FormTemplate from '@data-driven-forms/common/form-template';
+=======
+import FormTemplate from '@data-driven-forms/common/src/form-template';
+>>>>>>> ccf469ee (feat(mui): Migrate mapper to new build output structure.)
 
 const useStyles = makeStyles(() => ({
   buttonGroup: {
