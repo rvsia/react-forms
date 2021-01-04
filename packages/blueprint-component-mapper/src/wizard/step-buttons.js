@@ -1,11 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+<<<<<<< HEAD
 import selectNext from '@data-driven-forms/common/wizard/select-next';
 import clsx from 'clsx';
 import { createUseStyles } from 'react-jss';
 
 import { Button, Intent } from '@blueprintjs/core';
 
+=======
+import selectNext from '@data-driven-forms/common/src/wizard/select-next';
+import clsx from 'clsx';
+
+import { Button, Intent } from '@blueprintjs/core';
+
+import './step-buttons.scss';
+
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
 const NextButton = ({ nextStep, handleNext, buttonLabels, getState, handleSubmit, isDisabled, ...props }) => (
   <Button
     disabled={isDisabled}
@@ -32,6 +42,7 @@ NextButton.propTypes = {
   isDisabled: PropTypes.bool
 };
 
+<<<<<<< HEAD
 const useStyles = createUseStyles({
   buttonGroup: {
     marginTop: 16,
@@ -44,6 +55,8 @@ const useStyles = createUseStyles({
   }
 });
 
+=======
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
 const StepButtons = ({
   handleNext,
   currentStep,
@@ -58,6 +71,7 @@ const StepButtons = ({
   BackButtonProps,
   NextButtonProps,
   SubmitButtonProps
+<<<<<<< HEAD
 }) => {
   const { buttonGroup } = useStyles();
 
@@ -83,6 +97,29 @@ const StepButtons = ({
     </div>
   );
 };
+=======
+}) => (
+  <div {...ButtonToolbarProps} className={clsx('ddorg__blueprint_mapper--wizard-button-group', ButtonToolbarProps && ButtonToolbarProps.className)}>
+    <Button onClick={formOptions.onCancel} minimal {...CancelButtonProps}>
+      {buttonLabels.cancel}
+    </Button>
+    <div {...DirectionButtonProps}>
+      <Button onClick={handlePrev} disabled={activeStepIndex === 0} {...BackButtonProps}>
+        {buttonLabels.back}
+      </Button>
+      <NextButton
+        getState={formOptions.getState}
+        nextStep={currentStep.nextStep}
+        buttonLabels={buttonLabels}
+        handleNext={handleNext}
+        isDisabled={!formOptions.valid || isNextDisabled}
+        handleSubmit={formOptions.handleSubmit}
+        {...(currentStep.nextStep ? NextButtonProps : SubmitButtonProps)}
+      />
+    </div>
+  </div>
+);
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
 
 StepButtons.propTypes = {
   currentStep: PropTypes.object,

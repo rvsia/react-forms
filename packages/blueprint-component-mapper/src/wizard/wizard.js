@@ -1,6 +1,10 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+<<<<<<< HEAD
 import WizardCommon from '@data-driven-forms/common/wizard/wizard';
+=======
+import WizardCommon from '@data-driven-forms/common/src/wizard/wizard';
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
 import { FormSpy, WizardContext } from '@data-driven-forms/react-form-renderer';
 
 import StepButtons from './step-buttons';

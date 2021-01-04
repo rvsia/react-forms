@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+<<<<<<< HEAD
 import DualListSelectCommon from '@data-driven-forms/common/dual-list-select';
 import { Menu, MenuItem, ButtonGroup, Button, ControlGroup, InputGroup } from '@blueprintjs/core';
 import clsx from 'clsx';
@@ -48,6 +49,32 @@ const List = ({ value, optionClick, noOptionsTitle, filterValue, filterValueText
     </Menu>
   );
 };
+=======
+import DualListSelectCommon from '@data-driven-forms/common/src/dual-list-select';
+import { Menu, MenuItem, ButtonGroup, Button, ControlGroup, InputGroup } from '@blueprintjs/core';
+import clsx from 'clsx';
+
+import { FormGroupInternal } from '../form-group/form-group';
+
+import './dual-list-select.scss';
+
+const List = ({ value, optionClick, noOptionsTitle, filterValue, filterValueText, selectedValues, MenuProps, MenuItemProps }) => (
+  <Menu {...MenuProps} className={clsx('bp3-elevation-1', 'ddorg__blueprint_mapper--dls-menu', MenuProps.className)}>
+    {value.length < 1 && <MenuItem text={filterValue ? filterValueText : noOptionsTitle} disabled {...MenuItemProps} />}
+    {value.length > 0 &&
+      value.map(({ value, label, MenuItemProps: ItemMenuItemProps }) => (
+        <MenuItem
+          onClick={(e) => optionClick(e, value)}
+          key={value}
+          active={selectedValues.includes(value)}
+          text={label}
+          {...MenuItemProps}
+          {...ItemMenuItemProps}
+        />
+      ))}
+  </Menu>
+);
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
 
 List.propTypes = {
   value: PropTypes.arrayOf(
@@ -144,10 +171,15 @@ const DualListInternal = ({
   RightMenuProps,
   RightMenuItemProps
 }) => {
+<<<<<<< HEAD
   const { buttonGroup, wrapper } = useStyles();
 
   return (
     <div {...WrapperProps} className={clsx(wrapper, WrapperProps.className)}>
+=======
+  return (
+    <div {...WrapperProps} className={clsx('ddorg__blueprint_mapper--dls-wrapper', WrapperProps.className)}>
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
       <div {...LeftWrapperProps}>
         {leftTitle}
         <Toolbar
@@ -171,7 +203,16 @@ const DualListInternal = ({
           MenuItemProps={LeftMenuItemProps}
         />
       </div>
+<<<<<<< HEAD
       <ButtonGroup vertical alignText="center" {...ButtonGroupProps} className={clsx(buttonGroup, ButtonGroupProps.className)}>
+=======
+      <ButtonGroup
+        vertical
+        alignText="center"
+        {...ButtonGroupProps}
+        className={clsx('ddorg__blueprint_mapper--dls-button-group', ButtonGroupProps.className)}
+      >
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
         <Button
           disabled={state.selectedLeftValues.length === 0}
           onClick={handleMoveRight}

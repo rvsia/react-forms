@@ -2,12 +2,16 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { useFieldApi, useFormApi, FieldArray as FieldArrayFF } from '@data-driven-forms/react-form-renderer';
+<<<<<<< HEAD
 import { createUseStyles } from 'react-jss';
+=======
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
 
 import { Button, Intent, FormGroup } from '@blueprintjs/core';
 
 import BlueprintContext from '../blueprint-context/blueprint-context';
 
+<<<<<<< HEAD
 const useStyles = createUseStyles({
   addContainer: {
     display: 'flex',
@@ -22,6 +26,12 @@ const useStyles = createUseStyles({
 const ArrayItem = ({ remove, fields, name, removeLabel, ArrayItemProps, RemoveButtonProps, disabledRemove }) => {
   const formOptions = useFormApi();
   const { remove: removeCss } = useStyles();
+=======
+import './field-array.scss';
+
+const ArrayItem = ({ remove, fields, name, removeLabel, ArrayItemProps, RemoveButtonProps, disabledRemove }) => {
+  const formOptions = useFormApi();
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
 
   const editedFields = fields.map((field) => ({
     ...field,
@@ -36,7 +46,11 @@ const ArrayItem = ({ remove, fields, name, removeLabel, ArrayItemProps, RemoveBu
         intent={Intent.DANGER}
         disabled={disabledRemove}
         {...RemoveButtonProps}
+<<<<<<< HEAD
         className={clsx(removeCss, RemoveButtonProps && RemoveButtonProps.className)}
+=======
+        className={clsx('ddorg__blueprint_mapper--field-array-remove', RemoveButtonProps && RemoveButtonProps.className)}
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
       >
         {removeLabel}
       </Button>
@@ -79,8 +93,11 @@ const FieldArray = (props) => {
 
   const { required } = useContext(BlueprintContext);
 
+<<<<<<< HEAD
   const { addContainer } = useStyles();
 
+=======
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
   const { error, touched, submitError } = meta;
   const showError = (validateOnMount || touched) && (error || submitError);
 
@@ -113,7 +130,14 @@ const FieldArray = (props) => {
                 disabledRemove={fieldArrayProps.fields.length <= minItems}
               />
             ))}
+<<<<<<< HEAD
             <div {...AddContainerProps} className={clsx(addContainer, AddContainerProps && AddContainerProps.className)}>
+=======
+            <div
+              {...AddContainerProps}
+              className={clsx('ddorg__blueprint_mapper--field-array-add-container', AddContainerProps && AddContainerProps.className)}
+            >
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
               <Button
                 onClick={() => fieldArrayProps.fields.push(defaultItem)}
                 intent={Intent.SUCCESS}

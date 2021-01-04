@@ -1,11 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+<<<<<<< HEAD
 import { createUseStyles } from 'react-jss';
 
 import FormTemplate from '@data-driven-forms/common/form-template';
 import { Button, H1, H2 } from '@blueprintjs/core';
 import BlueprintContext from '../blueprint-context/blueprint-context';
 
+=======
+
+import FormTemplate from '@data-driven-forms/common/src/form-template';
+import { Button, H1, H2 } from '@blueprintjs/core';
+import BlueprintContext from '../blueprint-context/blueprint-context';
+
+import './form-template.scss';
+
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
 const Form = ({ children, ...props }) => (
   <form noValidate {...props} style={{ display: 'grid' }}>
     {children}
@@ -16,6 +26,7 @@ Form.propTypes = {
   children: PropTypes.node
 };
 
+<<<<<<< HEAD
 const useStyles = createUseStyles({
   buttonGroup: {
     marginTop: 16,
@@ -35,6 +46,13 @@ const ButtonGroup = ({ children, ...props }) => {
     </div>
   );
 };
+=======
+const ButtonGroup = ({ children, ...props }) => (
+  <div className="ddorg__blueprint_mapper--button-group" {...props}>
+    {children}
+  </div>
+);
+>>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
 
 ButtonGroup.propTypes = {
   children: PropTypes.node
