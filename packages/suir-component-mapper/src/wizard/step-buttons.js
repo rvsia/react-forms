@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { createUseStyles } from 'react-jss';
 
+<<<<<<< HEAD
 import selectNext from '@data-driven-forms/common/wizard/select-next';
+=======
+import selectNext from '@data-driven-forms/common/src/wizard/select-next';
+>>>>>>> 704f14c3 (feat(suir): Migrate to new build process.)
 import { FormSpy } from '@data-driven-forms/react-form-renderer';
 import { Button } from 'semantic-ui-react';
 

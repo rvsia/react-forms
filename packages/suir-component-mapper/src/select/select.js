@@ -1,11 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+<<<<<<< HEAD
 import CommonSelect from '@data-driven-forms/common/select';
 import parseInternalValue from '@data-driven-forms/common/select/parse-internal-value';
 import FormFieldGrid from '../form-field-grid/form-field-grid';
 import { validationError, validationWarning } from '../common/helpers';
 import { meta, input } from '@data-driven-forms/common/prop-types-templates';
+=======
+import CommonSelect from '@data-driven-forms/common/src/select';
+import parseInternalValue from '@data-driven-forms/common/src/select/parse-internal-value';
+import FormFieldGrid from '../form-field-grid/form-field-grid';
+import { validationError, validationWarning } from '../common/helpers';
+import { meta, input } from '@data-driven-forms/common/src/prop-types-templates';
+>>>>>>> 704f14c3 (feat(suir): Migrate to new build process.)
 import { useFieldApi } from '@data-driven-forms/react-form-renderer';
 import { Dropdown } from 'semantic-ui-react';
 import FormField from '../form-field/form-field';

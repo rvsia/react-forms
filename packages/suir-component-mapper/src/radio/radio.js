@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FormRadio, FormField } from 'semantic-ui-react';
+<<<<<<< HEAD
 import { wrapperProps } from '@data-driven-forms/common/multiple-choice-list';
+=======
+import { wrapperProps } from '@data-driven-forms/common/src/multiple-choice-list';
+>>>>>>> 704f14c3 (feat(suir): Migrate to new build process.)
 
 import FormFieldGrid from '../form-field-grid/form-field-grid';
 import { validationError, validationWarning } from '../common/helpers';

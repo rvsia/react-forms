@@ -1,12 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+<<<<<<< HEAD
 import DualListSelectCommon from '@data-driven-forms/common/dual-list-select';
 import { Button, Grid, GridColumn, Input, Segment, Header } from 'semantic-ui-react';
 import FormField from '../form-field';
 import { createUseStyles } from 'react-jss';
 import clsx from 'clsx';
 import FormFieldGrid from '../form-field-grid';
+=======
+import DualListSelectCommon from '@data-driven-forms/common/src/dual-list-select';
+import { Button, Grid, GridColumn, Input, Segment, Header } from 'semantic-ui-react';
+import FormField from '../form-field/form-field';
+import { createUseStyles } from 'react-jss';
+import clsx from 'clsx';
+import FormFieldGrid from '../form-field-grid/form-field-grid';
+>>>>>>> 704f14c3 (feat(suir): Migrate to new build process.)
 import { validationError, validationWarning } from '../common/helpers';
 
 const useListStyles = createUseStyles({
