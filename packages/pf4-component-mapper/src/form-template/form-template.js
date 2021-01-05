@@ -1,10 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+<<<<<<< HEAD
 import FormTemplate from '@data-driven-forms/common/form-template';
 
 import { Button as PF4Button, ActionGroup, Form, TextContent, Text, TextVariants } from '@patternfly/react-core';
 
+=======
+import FormTemplate from '@data-driven-forms/common/src/form-template';
+
+import { Button as PF4Button, ActionGroup, Form, TextContent, Text, TextVariants } from '@patternfly/react-core';
+
+import './form-template.scss';
+
+>>>>>>> 8a9ee0d9 (feat(pf4): Migrate to new build process.)
 export const Button = ({ label, bsStyle, children, disabled, buttonType, ...props }) => (
   <PF4Button variant={buttonType === 'cancel' ? 'link' : bsStyle || 'secondary'} isDisabled={disabled} {...props}>
     {label}

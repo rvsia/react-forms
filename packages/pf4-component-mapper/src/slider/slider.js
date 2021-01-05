@@ -1,8 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useFieldApi } from '@data-driven-forms/react-form-renderer';
+<<<<<<< HEAD
 import FormGroup from '../form-group';
 import { Slider as PF4Slider } from '@patternfly/react-core';
+=======
+<<<<<<<< HEAD:packages/pf4-component-mapper/src/slider/slider.js
+import FormGroup from '../form-group/form-group';
+import { Badge, Grid, GridItem } from '@patternfly/react-core';
+
+import './slider.scss';
+========
+import FormGroup from '../common/form-group';
+import { Slider as PF4Slider } from '@patternfly/react-core';
+>>>>>>>> 8a9ee0d9 (feat(pf4): Migrate to new build process.):packages/pf4-component-mapper/src/files/slider.js
+>>>>>>> 8a9ee0d9 (feat(pf4): Migrate to new build process.)
 
 const Slider = (props) => {
   const {

@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+<<<<<<< HEAD
 import './input.css';
+=======
+import './input.scss';
+>>>>>>> 8a9ee0d9 (feat(pf4): Migrate to new build process.)
 
 const getInputString = (filter, value) => {
   if (typeof filter === 'string') {

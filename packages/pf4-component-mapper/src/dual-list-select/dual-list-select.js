@@ -4,8 +4,29 @@ import { DualListSelector } from '@patternfly/react-core';
 import { useFieldApi } from '@data-driven-forms/react-form-renderer';
 import isEqual from 'lodash/isEqual';
 
+<<<<<<< HEAD
 import FormGroup from '../form-group';
 import DualListContext from '../dual-list-context';
+=======
+<<<<<<<< HEAD:packages/pf4-component-mapper/src/dual-list-select/dual-list-select.js
+import {
+  PficonSortCommonAscIcon,
+  PficonSortCommonDescIcon,
+  SearchIcon,
+  AngleDoubleLeftIcon,
+  AngleDoubleRightIcon,
+  AngleRightIcon,
+  AngleLeftIcon
+} from '@patternfly/react-icons';
+
+import './dual-list-select.scss';
+import DualListSelectCommon from '../../../common/src/dual-list-select';
+import FormGroup from '../form-group/form-group';
+========
+import FormGroup from '../common/form-group';
+import DualListContext from './dual-list-context';
+>>>>>>>> 8a9ee0d9 (feat(pf4): Migrate to new build process.):packages/pf4-component-mapper/src/files/dual-list-select.js
+>>>>>>> 8a9ee0d9 (feat(pf4): Migrate to new build process.)
 
 const DualList = (props) => {
   const {

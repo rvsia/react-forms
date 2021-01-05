@@ -1,6 +1,7 @@
 import React, { useReducer, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { FormSpy, WizardContext } from '@data-driven-forms/react-form-renderer';
+<<<<<<< HEAD
 import Wizard from '@data-driven-forms/common/wizard/wizard';
 
 import { WizardNav, WizardHeader, Modal as PF4Modal } from '@patternfly/react-core';
@@ -11,6 +12,18 @@ import './wizard-components/wizard-styles.css';
 import WizardNavigation from './wizard-components/wizard-nav';
 import reducer from './wizard-components/reducer';
 import WizardToggle from './wizard-components/wizard-toggle';
+=======
+import Wizard from '@data-driven-forms/common/src/wizard/wizard';
+
+import { WizardNav, WizardHeader, Modal as PF4Modal } from '@patternfly/react-core';
+
+import WizardStep from './wizard/wizard-step';
+import './wizard/wizard-styles.scss';
+
+import WizardNavigation from './wizard/wizard-nav';
+import reducer from './wizard/reducer';
+import WizardToggle from './wizard/wizard-toggle';
+>>>>>>> 8a9ee0d9 (feat(pf4): Migrate to new build process.)
 
 const Modal = ({ children, container, inModal, ...rest }) =>
   inModal ? (

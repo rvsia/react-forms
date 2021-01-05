@@ -8,9 +8,14 @@ import FormRenderer, { componentTypes, validatorTypes } from '@data-driven-forms
 import * as enterHandle from '@data-driven-forms/common/src/wizard/enter-handler';
 
 import { componentMapper, FormTemplate } from '../../index';
+<<<<<<< HEAD
 import reducer from '../../files/wizard/reducer';
 import commonReducer from '@data-driven-forms/common/src/wizard/reducer';
 import WizardToggle from '../../files/wizard/wizard-toggle';
+=======
+import reducer from '../../wizard/wizard/reducer';
+import WizardToggle from '../../wizard/wizard/wizard-toggle';
+>>>>>>> 8a9ee0d9 (feat(pf4): Migrate to new build process.)
 
 describe('<Wizard />', () => {
   let initialProps;

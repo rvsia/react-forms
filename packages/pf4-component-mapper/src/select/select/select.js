@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 
+<<<<<<< HEAD
 import DataDrivenSelect from '@data-driven-forms/common/select';
 import parseInternalValue from '@data-driven-forms/common/select/parse-internal-value';
 import Downshift from 'downshift';
@@ -12,6 +13,14 @@ import '@patternfly/react-styles/css/components/Chip/chip.css';
 import '@patternfly/react-styles/css/components/ChipGroup/chip-group.css';
 import '@patternfly/react-styles/css/components/Divider/divider.css';
 
+=======
+import DataDrivenSelect from '@data-driven-forms/common/src/select';
+import parseInternalValue from '@data-driven-forms/common/src/select/parse-internal-value';
+import Downshift from 'downshift';
+import { CaretDownIcon, CloseIcon, CircleNotchIcon } from '@patternfly/react-icons';
+
+import './select-styles.scss';
+>>>>>>> 8a9ee0d9 (feat(pf4): Migrate to new build process.)
 import Menu from './menu';
 import ClearIndicator from './clear-indicator';
 import ValueContainer from './value-container';
