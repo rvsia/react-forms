@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useFieldApi } from '@data-driven-forms/react-form-renderer';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import DataDrivenSelect from '@data-driven-forms/common/select';
 import fnToString from '@data-driven-forms/common/utils/fn-to-string';
 
@@ -11,6 +12,10 @@ import prepareProps from '../prepare-props';
 =======
 import DataDrivenSelect from '@data-driven-forms/common/src/select';
 import fnToString from '@data-driven-forms/common/src/utils/fn-to-string';
+=======
+import DataDrivenSelect from '@data-driven-forms/common/select';
+import fnToString from '@data-driven-forms/common/utils/fn-to-string';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 
 import { Select as CarbonSelect, MultiSelect, SelectItem, ComboBox } from 'carbon-components-react';
 import prepareProps from './prepare-props';

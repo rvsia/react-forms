@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import DualListSelectCommon from '@data-driven-forms/common/dual-list-select';
 import clsx from 'clsx';
 import { createUseStyles } from 'react-jss';
 =======
 import DualListSelectCommon from '@data-driven-forms/common/src/dual-list-select';
+=======
+import DualListSelectCommon from '@data-driven-forms/common/dual-list-select';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import clsx from 'clsx';
 >>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 

@@ -1,10 +1,14 @@
 import React, { createContext, useContext } from 'react';
 import PropTypes from 'prop-types';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import MultipleChoiceListCommon, { wrapperProps } from '@data-driven-forms/common/multiple-choice-list';
 =======
 import MultipleChoiceListCommon, { wrapperProps } from '@data-driven-forms/common/src/multiple-choice-list';
 >>>>>>> 704f14c3 (feat(suir): Migrate to new build process.)
+=======
+import MultipleChoiceListCommon, { wrapperProps } from '@data-driven-forms/common/multiple-choice-list';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import { FormCheckbox, Header, FormField } from 'semantic-ui-react';
 import { createUseStyles } from 'react-jss';
 import clsx from 'clsx';

@@ -5,10 +5,14 @@ import { TextField as MuiTextField } from '@material-ui/core';
 import FormFieldGrid from '../form-field-grid/form-field-grid';
 import { validationError } from '../common/helpers';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { meta, input } from '@data-driven-forms/common/prop-types-templates';
 =======
 import { meta, input } from '@data-driven-forms/common/src/prop-types-templates';
 >>>>>>> ccf469ee (feat(mui): Migrate mapper to new build output structure.)
+=======
+import { meta, input } from '@data-driven-forms/common/prop-types-templates';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import { useFieldApi } from '@data-driven-forms/react-form-renderer';
 
 const Textarea = (props) => {

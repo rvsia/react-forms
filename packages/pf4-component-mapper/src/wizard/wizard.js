@@ -2,6 +2,7 @@ import React, { useReducer, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { FormSpy, WizardContext } from '@data-driven-forms/react-form-renderer';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Wizard from '@data-driven-forms/common/wizard/wizard';
 
 import { WizardNav, WizardHeader, Modal as PF4Modal } from '@patternfly/react-core';
@@ -14,6 +15,9 @@ import reducer from './wizard-components/reducer';
 import WizardToggle from './wizard-components/wizard-toggle';
 =======
 import Wizard from '@data-driven-forms/common/src/wizard/wizard';
+=======
+import Wizard from '@data-driven-forms/common/wizard/wizard';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 
 import { WizardNav, WizardHeader, Modal as PF4Modal } from '@patternfly/react-core';
 

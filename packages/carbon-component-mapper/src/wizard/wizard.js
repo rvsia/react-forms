@@ -7,8 +7,12 @@ import { createUseStyles } from 'react-jss';
 import WizardCommon from '@data-driven-forms/common/wizard/wizard';
 =======
 
+<<<<<<< HEAD
 import WizardCommon from '@data-driven-forms/common/src/wizard/wizard';
 >>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
+=======
+import WizardCommon from '@data-driven-forms/common/wizard/wizard';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import { FormSpy, WizardContext } from '@data-driven-forms/react-form-renderer';
 import { Button, Column, Grid, Row } from 'carbon-components-react';
 

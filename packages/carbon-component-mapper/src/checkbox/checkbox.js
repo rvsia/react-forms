@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useFieldApi } from '@data-driven-forms/react-form-renderer';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import MultipleChoiceListCommon from '@data-driven-forms/common/multiple-choice-list';
 
 import { Checkbox as CarbonCheckbox, FormGroup } from 'carbon-components-react';
@@ -10,6 +11,9 @@ import WithDescription from '../with-description';
 import prepareProps, { buildLabel } from '../prepare-props';
 =======
 import MultipleChoiceListCommon from '@data-driven-forms/common/src/multiple-choice-list';
+=======
+import MultipleChoiceListCommon from '@data-driven-forms/common/multiple-choice-list';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 
 import { Checkbox as CarbonCheckbox, FormGroup } from 'carbon-components-react';
 

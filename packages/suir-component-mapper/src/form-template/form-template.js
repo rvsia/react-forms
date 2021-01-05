@@ -3,10 +3,14 @@ import PropTypes from 'prop-types';
 import { Button as SuirButton, Header } from 'semantic-ui-react';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import FormTemplate from '@data-driven-forms/common/form-template';
 =======
 import FormTemplate from '@data-driven-forms/common/src/form-template';
 >>>>>>> 704f14c3 (feat(suir): Migrate to new build process.)
+=======
+import FormTemplate from '@data-driven-forms/common/form-template';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 
 const Form = ({ children, ...props }) => (
   <form className="ui form" noValidate {...props}>

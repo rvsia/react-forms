@@ -3,10 +3,14 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import selectNext from '@data-driven-forms/common/wizard/select-next';
 =======
 import selectNext from '@data-driven-forms/common/src/wizard/select-next';
 >>>>>>> ccf469ee (feat(mui): Migrate mapper to new build output structure.)
+=======
+import selectNext from '@data-driven-forms/common/wizard/select-next';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import { FormSpy } from '@data-driven-forms/react-form-renderer';
 import { Button, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';

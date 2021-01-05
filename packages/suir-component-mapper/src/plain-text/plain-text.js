@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import validTextFields from '@data-driven-forms/common/utils/valid-text-fields';
 =======
 import validTextFields from '@data-driven-forms/common/src/utils/valid-text-fields';
 >>>>>>> 704f14c3 (feat(suir): Migrate to new build process.)
+=======
+import validTextFields from '@data-driven-forms/common/utils/valid-text-fields';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 
 const PlainText = ({ variant, label, name, ...rest }) =>
   typeof label === 'string'

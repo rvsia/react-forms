@@ -2,10 +2,14 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import MultipleChoiceList from '@data-driven-forms/common/multiple-choice-list';
 =======
 import MultipleChoiceList from '@data-driven-forms/common/src/multiple-choice-list';
 >>>>>>> 1cafc7dd (feat(blueprint): Migrate mapper to new build process.)
+=======
+import MultipleChoiceList from '@data-driven-forms/common/multiple-choice-list';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import { Checkbox, FormGroup, Intent } from '@blueprintjs/core';
 
 import FormGroupWrapper from '../form-group/form-group';

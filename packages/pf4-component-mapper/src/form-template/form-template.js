@@ -2,12 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import FormTemplate from '@data-driven-forms/common/form-template';
 
 import { Button as PF4Button, ActionGroup, Form, TextContent, Text, TextVariants } from '@patternfly/react-core';
 
 =======
 import FormTemplate from '@data-driven-forms/common/src/form-template';
+=======
+import FormTemplate from '@data-driven-forms/common/form-template';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 
 import { Button as PF4Button, ActionGroup, Form, TextContent, Text, TextVariants } from '@patternfly/react-core';
 

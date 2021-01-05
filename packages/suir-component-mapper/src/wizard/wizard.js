@@ -2,10 +2,14 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { WizardContext } from '@data-driven-forms/react-form-renderer';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Wizard from '@data-driven-forms/common/wizard/wizard';
 =======
 import Wizard from '@data-driven-forms/common/src/wizard/wizard';
 >>>>>>> 704f14c3 (feat(suir): Migrate to new build process.)
+=======
+import Wizard from '@data-driven-forms/common/wizard/wizard';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import WizardNav from './wizard-nav';
 import WizardStepButtons from './step-buttons';
 

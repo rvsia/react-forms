@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import DualListSelectCommon from '@data-driven-forms/common/dual-list-select';
 import { Menu, MenuItem, ButtonGroup, Button, ControlGroup, InputGroup } from '@blueprintjs/core';
 import clsx from 'clsx';
@@ -51,6 +52,9 @@ const List = ({ value, optionClick, noOptionsTitle, filterValue, filterValueText
 };
 =======
 import DualListSelectCommon from '@data-driven-forms/common/src/dual-list-select';
+=======
+import DualListSelectCommon from '@data-driven-forms/common/dual-list-select';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import { Menu, MenuItem, ButtonGroup, Button, ControlGroup, InputGroup } from '@blueprintjs/core';
 import clsx from 'clsx';
 

@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import DataDrivenSelect from '@data-driven-forms/common/select';
 import parseInternalValue from '@data-driven-forms/common/select/parse-internal-value';
 import Downshift from 'downshift';
@@ -16,6 +17,10 @@ import '@patternfly/react-styles/css/components/Divider/divider.css';
 =======
 import DataDrivenSelect from '@data-driven-forms/common/src/select';
 import parseInternalValue from '@data-driven-forms/common/src/select/parse-internal-value';
+=======
+import DataDrivenSelect from '@data-driven-forms/common/select';
+import parseInternalValue from '@data-driven-forms/common/select/parse-internal-value';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import Downshift from 'downshift';
 import { CaretDownIcon, CloseIcon, CircleNotchIcon } from '@patternfly/react-icons';
 

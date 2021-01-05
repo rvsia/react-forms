@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import selectNext from '@data-driven-forms/common/wizard/select-next';
 import clsx from 'clsx';
 import { createUseStyles } from 'react-jss';
@@ -9,6 +10,9 @@ import { Button, Intent } from '@blueprintjs/core';
 
 =======
 import selectNext from '@data-driven-forms/common/src/wizard/select-next';
+=======
+import selectNext from '@data-driven-forms/common/wizard/select-next';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import clsx from 'clsx';
 
 import { Button, Intent } from '@blueprintjs/core';

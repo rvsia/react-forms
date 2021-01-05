@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import DualListSelectCommon from '@data-driven-forms/common/dual-list-select';
 import { Button, Grid, GridColumn, Input, Segment, Header } from 'semantic-ui-react';
 import FormField from '../form-field';
@@ -10,6 +11,9 @@ import clsx from 'clsx';
 import FormFieldGrid from '../form-field-grid';
 =======
 import DualListSelectCommon from '@data-driven-forms/common/src/dual-list-select';
+=======
+import DualListSelectCommon from '@data-driven-forms/common/dual-list-select';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import { Button, Grid, GridColumn, Input, Segment, Header } from 'semantic-ui-react';
 import FormField from '../form-field/form-field';
 import { createUseStyles } from 'react-jss';

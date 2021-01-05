@@ -2,10 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormControlLabel, FormHelperText, FormControl, FormGroup, FormLabel, Switch as MUISwitch } from '@material-ui/core';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { meta, input } from '@data-driven-forms/common/prop-types-templates';
 =======
 import { meta, input } from '@data-driven-forms/common/src/prop-types-templates';
 >>>>>>> ccf469ee (feat(mui): Migrate mapper to new build output structure.)
+=======
+import { meta, input } from '@data-driven-forms/common/prop-types-templates';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 
 import FormFieldGrid from '../form-field-grid/form-field-grid';
 import { validationError } from '../common/helpers';

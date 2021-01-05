@@ -1,5 +1,6 @@
 import React from 'react';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { childrenPropTypes } from '@data-driven-forms/common/prop-types-templates';
 import { createUseStyles } from 'react-jss';
 
@@ -24,6 +25,9 @@ const IsRequired = ({ children }) => {
 };
 =======
 import { childrenPropTypes } from '@data-driven-forms/common/src/prop-types-templates';
+=======
+import { childrenPropTypes } from '@data-driven-forms/common/prop-types-templates';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 
 import './is-required.scss';
 

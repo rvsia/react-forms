@@ -8,10 +8,14 @@ import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Wizard from '@data-driven-forms/common/wizard/wizard';
 =======
 import Wizard from '@data-driven-forms/common/src/wizard/wizard';
 >>>>>>> ccf469ee (feat(mui): Migrate mapper to new build output structure.)
+=======
+import Wizard from '@data-driven-forms/common/wizard/wizard';
+>>>>>>> f3da8d35 (fix(common): Use correct common package build.)
 import WizardNav from './wizard-nav';
 import WizardStepButtons from './step-buttons';
 
