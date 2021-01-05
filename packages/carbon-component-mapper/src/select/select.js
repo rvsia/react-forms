@@ -2,11 +2,19 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useFieldApi } from '@data-driven-forms/react-form-renderer';
 
+<<<<<<< HEAD
 import DataDrivenSelect from '@data-driven-forms/common/select';
 import fnToString from '@data-driven-forms/common/utils/fn-to-string';
 
 import { Select as CarbonSelect, MultiSelect, SelectItem, ComboBox } from 'carbon-components-react';
 import prepareProps from '../prepare-props';
+=======
+import DataDrivenSelect from '@data-driven-forms/common/src/select';
+import fnToString from '@data-driven-forms/common/src/utils/fn-to-string';
+
+import { Select as CarbonSelect, MultiSelect, SelectItem, ComboBox } from 'carbon-components-react';
+import prepareProps from './prepare-props';
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
 export const multiOnChange = (input, simpleValue) => ({ selectedItem, selectedItems }) => {
   if (simpleValue) {

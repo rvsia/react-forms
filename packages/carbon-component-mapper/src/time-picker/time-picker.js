@@ -4,7 +4,11 @@ import { useFieldApi } from '@data-driven-forms/react-form-renderer';
 
 import { TimePicker as CarbonTimePicker, TimePickerSelect, SelectItem } from 'carbon-components-react';
 
+<<<<<<< HEAD
 import prepareProps from '../prepare-props';
+=======
+import prepareProps from './prepare-props';
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 import HelperTextBlock from '../helper-text-block/helper-text-block';
 
 const TimePicker = (props) => {

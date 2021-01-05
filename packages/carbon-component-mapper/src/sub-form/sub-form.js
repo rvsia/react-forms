@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+<<<<<<< HEAD
 import { createUseStyles } from 'react-jss';
 
 import { useFormApi } from '@data-driven-forms/react-form-renderer';
@@ -19,6 +20,18 @@ const SubForm = ({ fields, component, title, description, TitleElement, Descript
 
   return (
     <div {...rest} className={clsx(tab, rest.className)}>
+=======
+
+import { useFormApi } from '@data-driven-forms/react-form-renderer';
+
+import './sub-form.scss';
+
+const SubForm = ({ fields, component, title, description, TitleElement, DescriptionElement, TitleProps, DescriptionProps, HeaderProps, ...rest }) => {
+  const formOptions = useFormApi();
+
+  return (
+    <div {...rest} className={clsx('ddorg__carbon-sub-form', rest.className)}>
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
       {(title || description) && (
         <div {...HeaderProps}>
           {title && React.createElement(TitleElement, TitleProps, title)}

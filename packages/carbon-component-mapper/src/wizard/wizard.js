@@ -1,14 +1,20 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+<<<<<<< HEAD
 import { createUseStyles } from 'react-jss';
 
 import WizardCommon from '@data-driven-forms/common/wizard/wizard';
+=======
+
+import WizardCommon from '@data-driven-forms/common/src/wizard/wizard';
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 import { FormSpy, WizardContext } from '@data-driven-forms/react-form-renderer';
 import { Button, Column, Grid, Row } from 'carbon-components-react';
 
 import { ProgressStep, ProgressIndicator } from 'carbon-components-react/lib/components/ProgressIndicator/ProgressIndicator';
 
+<<<<<<< HEAD
 const useStyles = createUseStyles({
   horizontalNav: {
     marginBottom: 48
@@ -40,6 +46,21 @@ const WizardNav = ({ stepsInfo, jumpToStep, ...props }) => {
     </ProgressIndicator>
   );
 };
+=======
+import './wizard.scss';
+
+const WizardNav = ({ stepsInfo, jumpToStep, ...props }) => (
+  <ProgressIndicator
+    onChange={(index) => (props.currentIndex > index ? jumpToStep(index, true) : undefined)}
+    {...props}
+    className={clsx('ddorg__carbon-wizard-navigation-horizontal', props.className)}
+  >
+    {stepsInfo.map(({ title, ...step }, index) => (
+      <ProgressStep key={index} label={title} disabled={index > props.currentIndex} {...step} />
+    ))}
+  </ProgressIndicator>
+);
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
 WizardNav.propTypes = {
   stepsInfo: PropTypes.arrayOf(
@@ -58,6 +79,7 @@ const defaultLabels = {
   next: 'Next'
 };
 
+<<<<<<< HEAD
 const Layout = ({ nav, fields, WizardBodyProps }) => {
   const { body } = useStyles();
 
@@ -70,6 +92,16 @@ const Layout = ({ nav, fields, WizardBodyProps }) => {
     </React.Fragment>
   );
 };
+=======
+const Layout = ({ nav, fields, WizardBodyProps }) => (
+  <React.Fragment>
+    {nav}
+    <div {...WizardBodyProps} className={clsx('ddorg__carbon-wizard-body', WizardBodyProps?.className)}>
+      {fields}
+    </div>
+  </React.Fragment>
+);
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
 Layout.propTypes = {
   nav: PropTypes.node,
@@ -77,6 +109,7 @@ Layout.propTypes = {
   WizardBodyProps: PropTypes.object
 };
 
+<<<<<<< HEAD
 const VerticalLayout = ({ nav, fields, WizardBodyProps }) => {
   const { body } = useStyles();
 
@@ -93,6 +126,20 @@ const VerticalLayout = ({ nav, fields, WizardBodyProps }) => {
     </Grid>
   );
 };
+=======
+const VerticalLayout = ({ nav, fields, WizardBodyProps }) => (
+  <Grid narrow>
+    <Row>
+      <Column sm={1} md={2} lg={3}>
+        {nav}
+      </Column>
+      <Column {...WizardBodyProps} className={clsx('ddorg__carbon-wizard-body', WizardBodyProps?.className)}>
+        {fields}
+      </Column>
+    </Row>
+  </Grid>
+);
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
 VerticalLayout.propTypes = {
   nav: PropTypes.node,
@@ -114,8 +161,11 @@ const WizardInternal = ({
 }) => {
   const { formOptions, currentStep, handlePrev, onKeyDown, handleNext, activeStepIndex, selectNext, jumpToStep } = useContext(WizardContext);
 
+<<<<<<< HEAD
   const { buttonSet } = useStyles();
 
+=======
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
   const finalButtoLabels = {
     ...defaultLabels,
     ...buttonLabels
@@ -133,7 +183,11 @@ const WizardInternal = ({
       <WizardLayout nav={nav ? nav : null} fields={fields} WizardBodyProps={WizardBodyProps} />
       <FormSpy>
         {({ invalid, validating, submitting }) => (
+<<<<<<< HEAD
           <div {...ButtonSetProps} className={clsx(buttonSet, ButtonSetProps.className)}>
+=======
+          <div {...ButtonSetProps} className={clsx('ddorg__carbon-wizard-button-set', ButtonSetProps.className)}>
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
             {currentStep.nextStep ? (
               <Button
                 onClick={() => handleNext(selectNext(currentStep.nextStep, formOptions.getState))}

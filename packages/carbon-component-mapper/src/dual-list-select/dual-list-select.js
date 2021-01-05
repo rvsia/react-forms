@@ -1,8 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+<<<<<<< HEAD
 import DualListSelectCommon from '@data-driven-forms/common/dual-list-select';
 import clsx from 'clsx';
 import { createUseStyles } from 'react-jss';
+=======
+import DualListSelectCommon from '@data-driven-forms/common/src/dual-list-select';
+import clsx from 'clsx';
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
 import { Grid, Row, Column, Button, FormGroup, Search, TooltipIcon } from 'carbon-components-react';
 import { CheckmarkFilled16, ChevronRight32, ChevronLeft32, CaretSortDown32, CaretSortUp32 } from '@carbon/icons-react';
@@ -14,6 +19,7 @@ import {
   StructuredListCell
 } from 'carbon-components-react/lib/components/StructuredList/StructuredList';
 
+<<<<<<< HEAD
 import { buildLabel } from '../prepare-props';
 
 const useStyles = createUseStyles({
@@ -51,6 +57,10 @@ const useStyles = createUseStyles({
     background: '#c2c1c1 !important'
   }
 });
+=======
+import { buildLabel } from './prepare-props';
+import './dual-list-select.scss';
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
 const EmptyList = ({ message }) => (
   <StructuredListWrapper>
@@ -66,12 +76,19 @@ EmptyList.propTypes = {
   message: PropTypes.string
 };
 
+<<<<<<< HEAD
 const List = ({ options, selectedValues, handleOptionsClick, noTitle, ListProps, BodyProps }) => {
   const { dualList, dualListBody } = useStyles();
 
   return options.length > 0 ? (
     <StructuredListWrapper selection {...ListProps} className={clsx(dualList, ListProps.className)}>
       <StructuredListBody {...BodyProps} className={clsx(dualListBody, BodyProps.className)}>
+=======
+const List = ({ options, selectedValues, handleOptionsClick, noTitle, ListProps, BodyProps }) =>
+  options.length > 0 ? (
+    <StructuredListWrapper selection {...ListProps} className={clsx('ddorg__carbon-dual-list', ListProps.className)}>
+      <StructuredListBody {...BodyProps} className={clsx('ddorg__carbon-dual-list-body', BodyProps.className)}>
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
         {options.map(({ value, label, ListRowProps, ListCellProps, GridProps, RowProps, LabelProps, CheckmarkProps }) => (
           <StructuredListRow key={value} {...ListRowProps} onClick={(e) => handleOptionsClick({ ...e, ctrlKey: true }, value)}>
             <StructuredListCell {...ListCellProps}>
@@ -93,7 +110,10 @@ const List = ({ options, selectedValues, handleOptionsClick, noTitle, ListProps,
   ) : (
     <EmptyList message={noTitle} />
   );
+<<<<<<< HEAD
 };
+=======
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
 List.propTypes = {
   options: PropTypes.array,
@@ -104,6 +124,7 @@ List.propTypes = {
   BodyProps: PropTypes.object
 };
 
+<<<<<<< HEAD
 const Toolbar = ({ sortTitle, onFilter, onSort, sortDirection, placeholder, ToolbarProps, SearchProps, SortProps }) => {
   const { toolbar, tooltipButton } = useStyles();
 
@@ -116,6 +137,21 @@ const Toolbar = ({ sortTitle, onFilter, onSort, sortDirection, placeholder, Tool
     </div>
   );
 };
+=======
+const Toolbar = ({ sortTitle, onFilter, onSort, sortDirection, placeholder, ToolbarProps, SearchProps, SortProps }) => (
+  <div {...ToolbarProps} className={clsx('ddorg__carbon-dual-list-toolbar', ToolbarProps.className)}>
+    <Search onChange={(e) => onFilter(e.target.value)} labelText="" placeHolderText={placeholder} {...SearchProps} />
+    <TooltipIcon
+      onClick={onSort}
+      tooltipText={sortTitle}
+      {...SortProps}
+      className={clsx('ddorg__carbon-dual-list-tooltipbutton', SortProps.className)}
+    >
+      {sortDirection ? <CaretSortDown32 /> : <CaretSortUp32 />}
+    </TooltipIcon>
+  </div>
+);
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
 Toolbar.propTypes = {
   sortTitle: PropTypes.string,
@@ -184,6 +220,7 @@ const DualListSelectInner = ({
   LeftBodyProps,
   RightListProps,
   RightBodyProps
+<<<<<<< HEAD
 }) => {
   const { buttonWrapper } = useStyles();
 
@@ -264,6 +301,84 @@ const DualListSelectInner = ({
     </FormGroup>
   );
 };
+=======
+}) => (
+  <FormGroup legendText={buildLabel(label || '', isRequired)} {...FormGroupProps}>
+    <Grid {...GridProps}>
+      <Row condensed {...RowProps}>
+        <Column sm={4} md={8} lg={5} {...OptionsColumnProps}>
+          {React.createElement(LeftTitleElement, LeftTitleProps, leftTitle)}
+          <Toolbar
+            onFilter={filterOptions}
+            placeholder={filterOptionsTitle}
+            sortDirection={state.sortLeftDesc}
+            onSort={sortOptions}
+            sortTitle={sortOptionsTitle}
+            ToolbarProps={LeftToolbarProps}
+            SearchProps={LeftSearchProps}
+            SortProps={LeftSortProps}
+          />
+          <List
+            ListProps={LeftListProps}
+            BodyProps={LeftBodyProps}
+            options={leftValues}
+            selectedValues={state.selectedLeftValues}
+            handleOptionsClick={handleOptionsClick}
+            noTitle={state.filterOptions ? filterOptionsText : noOptionsTitle}
+          />
+        </Column>
+        <Column sm={4} md={8} lg={2} {...ButtonColumnProps} className={clsx('ddorg__carbon-dual-list-button-wrapper', ButtonColumnProps.className)}>
+          <Button
+            id="move-right"
+            renderIcon={ChevronRight32}
+            onClick={handleMoveRight}
+            disabled={isEmpty(state.selectedLeftValues)}
+            {...AddButtonProps}
+          >
+            {moveRightTitle}
+          </Button>
+          <Button id="move-all-right" onClick={handleClearLeftValues} disabled={isEmpty(leftValues)} {...AddAllButtonProps}>
+            {moveAllRightTitle}
+          </Button>
+          <Button id="move-all-left" onClick={handleClearRightValues} disabled={isEmpty(rightValues)} {...RemoveAllButtonProps}>
+            {moveAllLeftTitle}
+          </Button>
+          <Button
+            id="move-left"
+            renderIcon={ChevronLeft32}
+            onClick={handleMoveLeft}
+            disabled={isEmpty(state.selectedRightValues)}
+            {...RemoveButtonProps}
+          >
+            {moveLeftTitle}
+          </Button>
+        </Column>
+        <Column sm={4} md={8} lg={5} {...ValuesColumnProps}>
+          {React.createElement(RightTitleElement, RightTitleProps, rightTitle)}
+          <Toolbar
+            onFilter={filterValues}
+            placeholder={filterValuesTitle}
+            sortDirection={state.sortRightDesc}
+            onSort={sortValues}
+            sortTitle={sortValuesTitle}
+            ToolbarProps={RightToolbarProps}
+            SearchProps={RightSearchProps}
+            SortProps={RightSortProps}
+          />
+          <List
+            ListProps={RightListProps}
+            BodyProps={RightBodyProps}
+            options={rightValues}
+            selectedValues={state.selectedRightValues}
+            handleOptionsClick={handleValuesClick}
+            noTitle={state.filterValue ? filterValueText : noValueTitle}
+          />
+        </Column>
+      </Row>
+    </Grid>
+  </FormGroup>
+);
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
 DualListSelectInner.propTypes = {
   leftValues: PropTypes.array,

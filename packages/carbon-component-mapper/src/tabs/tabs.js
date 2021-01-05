@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+<<<<<<< HEAD
 import { createUseStyles } from 'react-jss';
+=======
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
 import { Tabs as CarbonTabs, Tab } from 'carbon-components-react';
 
 import { useFormApi } from '@data-driven-forms/react-form-renderer';
 
+<<<<<<< HEAD
 const useStyles = createUseStyles({
   tab: {
     '&>:not(:last-child)': {
@@ -18,12 +22,23 @@ const useStyles = createUseStyles({
 const Tabs = ({ fields, component, name, TabWrapperProps, ...props }) => {
   const formOptions = useFormApi();
   const { tab } = useStyles();
+=======
+import './tabs.scss';
+
+const Tabs = ({ fields, component, name, TabWrapperProps, ...props }) => {
+  const formOptions = useFormApi();
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
   return (
     <CarbonTabs {...props}>
       {fields.map(({ fields, name, label, title, ...rest }) => (
+<<<<<<< HEAD
         <Tab {...rest} id={name} key={name} label={label || title}>
           <div {...TabWrapperProps} className={clsx(tab, TabWrapperProps.className)}>
+=======
+        <Tab {...rest} className="pepa" id={name} key={name} label={label || title}>
+          <div {...TabWrapperProps} className={clsx('ddorg__carbon-form-template-tab', TabWrapperProps.className)}>
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
             {formOptions.renderForm(fields, formOptions)}
           </div>
         </Tab>

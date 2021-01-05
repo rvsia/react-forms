@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+<<<<<<< HEAD
 import { createUseStyles } from 'react-jss';
+=======
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
 import { useFieldApi, useFormApi, FieldArray as FieldArrayFF } from '@data-driven-forms/react-form-renderer';
 
 import { Button, FormGroup } from 'carbon-components-react';
 import { AddAlt32, Subtract32 } from '@carbon/icons-react';
 
+<<<<<<< HEAD
 import prepareProps from '../prepare-props';
 
 const useStyles = createUseStyles({
@@ -33,6 +37,14 @@ const useStyles = createUseStyles({
 const ArrayItem = ({ remove, fields, name, removeText, buttonDisabled, RemoveButtonProps, ArrayItemProps }) => {
   const formOptions = useFormApi();
   const { remove: removeStyle } = useStyles();
+=======
+import './field-array.scss';
+
+import prepareProps from './prepare-props';
+
+const ArrayItem = ({ remove, fields, name, removeText, buttonDisabled, RemoveButtonProps, ArrayItemProps }) => {
+  const formOptions = useFormApi();
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 
   const editedFields = fields.map((field) => ({
     ...field,
@@ -49,7 +61,11 @@ const ArrayItem = ({ remove, fields, name, removeText, buttonDisabled, RemoveBut
         kind="danger"
         onClick={remove}
         {...RemoveButtonProps}
+<<<<<<< HEAD
         className={clsx(removeStyle, RemoveButtonProps.className)}
+=======
+        className={clsx('ddorg__carbon-field-array-remove', RemoveButtonProps.className)}
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
       >
         {removeText}
       </Button>
@@ -93,8 +109,11 @@ const FieldArray = (props) => {
     validateOnMount
   } = useFieldApi(prepareProps(props));
 
+<<<<<<< HEAD
   const { formGroup, addContainer, add } = useStyles();
 
+=======
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
   const buttonLabelsFinal = {
     add: 'Add',
     remove: 'Remove',
@@ -110,7 +129,11 @@ const FieldArray = (props) => {
       message={Boolean(invalid)}
       messageText={invalid || ''}
       {...FormGroupProps}
+<<<<<<< HEAD
       className={clsx(formGroup, FormGroupProps.className)}
+=======
+      className={clsx('ddorg__carbon-field-array-form-group', FormGroupProps.className)}
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
     >
       <FieldArrayFF name={input.name} validate={arrayValidator}>
         {(fieldArrayProps) => (
@@ -128,14 +151,22 @@ const FieldArray = (props) => {
                 RemoveButtonProps={RemoveButtonProps}
               />
             ))}
+<<<<<<< HEAD
             <div {...AddContainerProps} className={clsx(addContainer, AddContainerProps.className)}>
+=======
+            <div {...AddContainerProps} className={clsx('ddorg__carbon-field-array-add-container', AddContainerProps.className)}>
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
               <Button
                 disabled={fieldArrayProps.fields.length >= maxItems}
                 renderIcon={AddAlt32}
                 id={`add-${input.name}`}
                 onClick={() => fieldArrayProps.fields.push(defaultItem)}
                 {...AddButtonProps}
+<<<<<<< HEAD
                 className={clsx(add, AddButtonProps.className)}
+=======
+                className={clsx('ddorg__carbon-field-array-add', AddButtonProps.className)}
+>>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
               >
                 {buttonLabelsFinal.add}
               </Button>
