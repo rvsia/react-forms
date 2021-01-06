@@ -1,12 +1,16 @@
 import React, { useReducer, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { FormSpy, WizardContext } from '@data-driven-forms/react-form-renderer';
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 import { FormSpy, WizardContext } from './wizard-components/node_modules/@data-driven-forms/react-form-renderer';
 >>>>>>> 839f28cc (fix(pf4): rename wizard sub folder)
+=======
+import { FormSpy, WizardContext } from '@data-driven-forms/react-form-renderer';
+>>>>>>> 0ddadaea (fix(all): fix imports after build process update)
 import Wizard from '@data-driven-forms/common/wizard/wizard';
 
 import { WizardNav, WizardHeader, Modal as PF4Modal } from '@patternfly/react-core';

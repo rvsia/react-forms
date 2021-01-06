@@ -5,10 +5,14 @@ import { useFieldApi } from '@data-driven-forms/react-form-renderer';
 import { TextArea } from 'carbon-components-react';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import prepareProps from '../prepare-props';
 =======
 import prepareProps from './prepare-props';
 >>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
+=======
+import prepareProps from '../prepare-props';
+>>>>>>> 0ddadaea (fix(all): fix imports after build process update)
 
 const Textarea = (props) => {
   const { input, meta, validateOnMount, helperText, ...rest } = useFieldApi(prepareProps(props));

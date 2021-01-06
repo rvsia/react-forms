@@ -1,5 +1,8 @@
 import { componentTypes } from '@data-driven-forms/react-form-renderer';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0ddadaea (fix(all): fix imports after build process update)
 import SubForm from '../sub-form';
 import Tabs from '../tabs';
 import TextField from '../text-field';
@@ -15,6 +18,7 @@ import Wizard from '../wizard';
 import FieldArray from '../field-array';
 import Slider from '../slider';
 import DualListSelectWrapper from '../dual-list-select';
+<<<<<<< HEAD
 =======
 import SubForm from './sub-form';
 import Tabs from './tabs';
@@ -32,6 +36,8 @@ import FieldArray from './field-array';
 import Slider from './slider';
 import DualListSelectWrapper from './dual-list-select';
 >>>>>>> 704f14c3 (feat(suir): Migrate to new build process.)
+=======
+>>>>>>> 0ddadaea (fix(all): fix imports after build process update)
 
 export const components = {
   TextField,

@@ -24,6 +24,7 @@ import {
 } from 'carbon-components-react/lib/components/StructuredList/StructuredList';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { buildLabel } from '../prepare-props';
 
 const useStyles = createUseStyles({
@@ -63,6 +64,9 @@ const useStyles = createUseStyles({
 });
 =======
 import { buildLabel } from './prepare-props';
+=======
+import { buildLabel } from '../prepare-props';
+>>>>>>> 0ddadaea (fix(all): fix imports after build process update)
 import './dual-list-select.scss';
 >>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
 

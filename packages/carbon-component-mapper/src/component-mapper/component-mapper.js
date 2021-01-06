@@ -1,5 +1,8 @@
 import { componentTypes } from '@data-driven-forms/react-form-renderer';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0ddadaea (fix(all): fix imports after build process update)
 import Tabs from '../tabs';
 import SubForm from '../sub-form';
 import Wizard from '../wizard';
@@ -15,6 +18,7 @@ import Switch from '../switch';
 import PlainText from '../plain-text';
 import DualListSelect from '../dual-list-select';
 import Slider from '../slider';
+<<<<<<< HEAD
 =======
 import Tabs from './tabs';
 import SubForm from './sub-form';
@@ -32,6 +36,8 @@ import PlainText from './plain-text';
 import DualListSelect from './dual-list-select';
 import Slider from './slider';
 >>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
+=======
+>>>>>>> 0ddadaea (fix(all): fix imports after build process update)
 
 const mapper = {
   [componentTypes.TEXT_FIELD]: TextField,

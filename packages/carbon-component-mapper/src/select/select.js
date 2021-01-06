@@ -9,6 +9,7 @@ import fnToString from '@data-driven-forms/common/utils/fn-to-string';
 
 import { Select as CarbonSelect, MultiSelect, SelectItem, ComboBox } from 'carbon-components-react';
 import prepareProps from '../prepare-props';
+<<<<<<< HEAD
 =======
 import DataDrivenSelect from '@data-driven-forms/common/src/select';
 import fnToString from '@data-driven-forms/common/src/utils/fn-to-string';
@@ -20,6 +21,8 @@ import fnToString from '@data-driven-forms/common/utils/fn-to-string';
 import { Select as CarbonSelect, MultiSelect, SelectItem, ComboBox } from 'carbon-components-react';
 import prepareProps from './prepare-props';
 >>>>>>> a4fc282c (feat(carbon): Migrate to new build process.)
+=======
+>>>>>>> 0ddadaea (fix(all): fix imports after build process update)
 
 export const multiOnChange = (input, simpleValue) => ({ selectedItem, selectedItems }) => {
   if (simpleValue) {

@@ -20,7 +20,7 @@ import {
 } from '@patternfly/react-icons';
 
 import './dual-list-select.scss';
-import DualListSelectCommon from '../../../common/src/dual-list-select';
+import DualListSelectCommon from '@data-driven-forms/common/dual-list-select';
 import FormGroup from '../form-group/form-group';
 ========
 import FormGroup from '../common/form-group';
