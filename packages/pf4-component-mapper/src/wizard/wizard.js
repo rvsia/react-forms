@@ -1,8 +1,12 @@
 import React, { useReducer, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
+<<<<<<< HEAD
 import { FormSpy, WizardContext } from '@data-driven-forms/react-form-renderer';
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+import { FormSpy, WizardContext } from './wizard-components/node_modules/@data-driven-forms/react-form-renderer';
+>>>>>>> 839f28cc (fix(pf4): rename wizard sub folder)
 import Wizard from '@data-driven-forms/common/wizard/wizard';
 
 import { WizardNav, WizardHeader, Modal as PF4Modal } from '@patternfly/react-core';
@@ -21,9 +25,10 @@ import Wizard from '@data-driven-forms/common/wizard/wizard';
 
 import { WizardNav, WizardHeader, Modal as PF4Modal } from '@patternfly/react-core';
 
-import WizardStep from './wizard/wizard-step';
-import './wizard/wizard-styles.scss';
+import WizardStep from './wizard-components/wizard-step';
+import './wizard-components/wizard-styles.scss';
 
+<<<<<<< HEAD
 import WizardNavigation from './wizard/wizard-nav';
 import reducer from './wizard/reducer';
 import WizardToggle from './wizard/wizard-toggle';
@@ -37,6 +42,11 @@ const Modal = ({ children, container, inModal, ...rest }) =>
   ) : (
     children
   );
+=======
+import WizardNavigation from './wizard-components/wizard-nav';
+import reducer from './wizard-components/reducer';
+import WizardToggle from './wizard-components/wizard-toggle';
+>>>>>>> 839f28cc (fix(pf4): rename wizard sub folder)
 
 Modal.propTypes = {
   children: PropTypes.node,
