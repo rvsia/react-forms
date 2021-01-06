@@ -1,6 +1,10 @@
 {
   "name": "@data-driven-forms/common",
+<<<<<<< HEAD
   "version": "2.23.3",
+=======
+  "version": "0.0.1",
+>>>>>>> 190e8051 (fix(common): publish first 0.0.1 version of common package.)
   "description": "Common components, helpers and other pieces of code",
   "license": "Apache-2.0",
   "main": "index.js",
